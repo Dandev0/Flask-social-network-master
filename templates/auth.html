@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Авторизация></title>
+    <link href="/static/style/auth_css.css" rel="stylesheet" type="text/css"/>
+</head>
+<link rel="icon" type="image/png" href="static/images/logo.png" />
+
+<body background="static/images/auth.png">
+
+   <img src="/static/images/logo.png"width="100" height="100" align="right">
+<div class="registration-cssave">
+    <h3 class="text-center" align="center">Форма входа</h3>
+    <form action='' method="post">
+        <div class="form-group" align="center">
+            <input class="form-control item" type="text" name="username" maxlength="15" minlength="4" pattern="^[a-zA-Z0-9_.-]*$" id="username" placeholder="Логин" required>
+
+        </div>
+
+        <div class="form-group" align="center">
+            <input class="form-control item" type="text" name="password" minlength="6" id="password" placeholder="Пароль" required>
+        </div>
+        <div class="form-group" align="center">
+                <button class="btn btn-primary btn-block create-account" type="submit" >Вход в аккаунт</button>
+        </div>
+
+        <div class="form-group">
+                <a href ='registration' class="btn create-account" type="submit" name="reg">Регистрация</a>
+        </div>
+        <div align="">
+        {% with messages = get_flashed_messages() %}
+    {% if messages %}
+
+        <ul class=flashes>
+            {% for message in messages %}
+        <li name="message">{{message}}</li>
+        {% endfor %}
+            </ul>
+
+  {% endif %}
+{% endwith %}
+            </div>
+    </form>
+
+
+</div>
+<div class="form-group">
+    <a href="/about">
+    <a1><h2>Информация о нас</h2></a1></a>
+</div>
+</body>
+</html>

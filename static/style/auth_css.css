@@ -1,0 +1,40 @@
+a1{
+ position: fixed;
+ color: #700FFFF;
+  left: 1190px;
+  bottom: 10px
+}
+
+h3{
+    color: #D2B48C;
+}
+
+INPUT[type="text"] {
+    background-color: #FFEBCD;
+    color: black;
+   }
+
+INPUT[type="password"] {
+background-color: #FFEBCD;
+color: black;
+}
+
+BUTTON[type="submit"] {
+    background-color: #FFEBCD;
+}
+
+li{
+    color: red
+}
+
+a[type='submit']{
+position: fixed;
+    right: 50%;
+}
+
+body {
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
